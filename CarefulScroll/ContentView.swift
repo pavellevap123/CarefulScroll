@@ -43,3 +43,10 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+extension UIScrollView {
+  open override var clipsToBounds: Bool {
+    get { false }
+    set { }
+  }
+}
